@@ -85,7 +85,7 @@
         successClicks = successClicks.filter(ts => now - ts < 3000); 
         successClicks.push(now);
 
-        if (successClicks.length >= 2) {
+        if (successClicks.length >= 10) {
             changetxt();
             successClicks = []; 
         }
